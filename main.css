@@ -1,0 +1,761 @@
+/* Generid styling for all the viewPorts */
+html {
+  direction: rtl;
+  margin: 0px;
+  padding: 0px;
+  cursor: default;
+}
+
+body {
+  direction: rtl;
+  background-color: #dbb17f;
+  margin: 15px 0px;
+  padding: 0px;
+  cursor: default;
+}
+
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+}
+
+main {
+  padding: 0px;
+  margin: 0px auto;
+  width: 990px;
+  display: flex;
+  position: relative;
+}
+
+header {
+  background: #000000 url("Images/File-1005.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #000000;
+  border-radius: 25px 25px 0px 0px;
+  margin: 0px auto 10px auto;
+  padding: 0px;
+  width: 989px;
+  height: 220px;
+  overflow: hidden !important;
+  position: relative;
+  box-sizing: border-box;
+}
+
+header > a > img {
+  width: 100px;
+  height: 67px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.LeftPartition {
+  padding: 0px;
+  margin: 0px;
+  flex: 0 0 150px;
+  /* overflow: hidden; */
+  box-sizing: border-box;
+  background-color: #999999;
+  border-radius: 15px;
+}
+
+.LeftPartitionInnerContent {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  min-height: 200px;
+  /* overflow: hidden; */
+  background-color: #d6d4d6;
+  border: 10px solid #000000;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.RightPartition {
+  padding: 0px;
+  margin: 0px;
+  flex: 0 0 150px;
+  /* overflow: hidden; */
+  box-sizing: border-box;
+  background-color: #aae0ff;
+  border-radius: 15px;
+}
+
+.RightPartitionInnerContent {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  min-height: 150px;
+  /* overflow: hidden; */
+  background-color: #b9dfea;
+  border: 10px solid #000000;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.CenterCenterDiv {
+  padding: 0px;
+  margin: 0px;
+  flex: 1;
+  /* overflow: hidden; */
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+footer {
+  box-sizing: border-box;
+  width: 990px;
+  min-height: 300px;
+  position: relative;
+  background-color: #e2e2e2;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #000000;
+  margin: 15px auto 0px auto;
+  overflow: hidden;
+}
+
+footer:hover {
+  border-style: solid;
+  border-width: 1px 3px 2px 4px;
+  border-color: #90ff4b #e055ff #bcff74 #e760ff;
+}
+footer nav {
+  width: 500px;
+  min-height: 180px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 10px;
+  right: 10px;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 10px 10px 0px 30px;
+  overflow: hidden;
+}
+
+footer ul {
+  list-style-type: none;
+  width: 150px;
+  padding: 0px;
+  float: left;
+  margin: auto 15px auto 0px;
+  overflow: hidden;
+}
+
+footer ul:last-child {
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
+  font-size: 17px;
+  font-family: Arial;
+}
+
+footer li:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+footer a {
+  color: #5253a2;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #000000;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Top Menu */
+
+header nav {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 960px;
+  height: 35px;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px 0px 25px 0px;
+  list-style-type: none;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+header ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0px 0px 0px 5px;
+  position: relative;
+  width: 180px;
+  height: 35px;
+  background-color: #f1c4ff;
+  border: 1px solid #8d67ff;
+  border-radius: 5px;
+}
+
+header ul li:hover {
+  background-color: #83c073;
+  border: 1px solid #50d3ff;
+}
+
+header ul li:last-child {
+  padding: 0px;
+  margin: 0px;
+}
+
+header nav a {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #3c38ff;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #ffe72f;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Side Menues */
+
+.RightPartition nav {
+  margin: 0px auto;
+  padding: 15px 0px;
+  width: 110px;
+  background-color: #e9e9e9;
+  flex: 1;
+}
+
+.RightPartition ul {
+  padding: 25px 0px;
+  /* background-color: #ffee71; */
+  margin: 0px;
+  list-style-type: none;
+  flex: 1;
+}
+
+.RightPartition li:not(:last-child) {
+  width: 93px;
+  /* height: 100px; */
+  text-align: right;
+  background-color: #2386e2;
+  padding: 15px 15px 0px 0px;
+  border: 1px solid #000000;
+  margin: 10px 0px;
+}
+
+.RightPartition li:last-child {
+  width: 93px;
+  /* height: 100px; */
+  text-align: right;
+  background-color: #2386e2;
+  padding: 15px 15px 0px 0px;
+  border: 1px solid #000000;
+  margin: 10px 0px;
+}
+.RightPartition li ul {
+  display: none;
+}
+
+.RightPartition nav a {
+  font-family: Arial;
+  color: #000000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.RightPartition nav a:hover {
+  color: #ff1b1b;
+}
+a {
+  font-size: 14px !important;
+}
+.LeftPartition nav {
+  margin: 0px auto;
+  padding: 15px 0px;
+  width: 110px;
+  background-color: #e9e9e9;
+  flex: 1;
+  direction: ltr;
+}
+
+.LeftPartition ul {
+  padding: 25px 0px;
+  /* background-color: #ffee71; */
+  margin: 0px;
+  list-style-type: none;
+  flex: 1;
+}
+
+.LeftPartition li:not(:last-child) {
+  width: 93px;
+  /* height: 100px; */
+  text-align: left;
+  background-color: #2386e2;
+  padding: 15px 0px 0px 15px;
+  border: 1px solid #000000;
+  margin: 10px 0px;
+}
+
+.LeftPartition li:last-child {
+  width: 93px;
+  /* height: 100px; */
+  border: 1px solid #000000;
+  background-color: #2386e2;
+  padding: 15px 0px 0px 15px;
+  margin: 10px 0px;
+  text-align: left;
+}
+
+.LeftPartition li ul {
+  display: none;
+}
+
+li {
+  position: relative;
+}
+
+.smarrowright::before {
+  left: 102px !important;
+}
+.open::after,
+.open::before {
+  transform: rotate(45deg) !important;
+  -webkit-transform: rotate(45deg) !important;
+}
+.LeftPartition nav a {
+  font-family: Arial;
+  color: #000000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: underline;
+}
+.LeftPartition nav a:hover {
+  color: #ff1b1b;
+}
+p:nth-of-type(1) img {
+  width: 411px;
+  height: 539px;
+  border: 0px solid #000000;
+  border-radius: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+p:nth-of-type(1) {
+  padding: 0px;
+  margin: 0px;
+}
+h1:nth-of-type(1) {
+  direction: ltr;
+  padding: 0;
+  color: #000000;
+  background-color: #f2ffad;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.8;
+  word-spacing: 0px;
+  margin: 0px 10px 0px 10px;
+  text-align: left;
+}
+h2:nth-of-type(1) {
+  direction: ltr;
+  padding: 0;
+  color: #000000;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1;
+  word-spacing: 0px;
+  margin: 0px 5px 0px 5px;
+  text-align: justify;
+}
+#YoutubeVideo-1 {
+  display: block;
+  clear: both;
+  margin: 0px auto;
+  border: 0px solid #000000;
+}
+p:nth-of-type(2) {
+  direction: ltr;
+  display: inline-block;
+  padding: 0;
+  color: #000000;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1;
+  word-spacing: 0px;
+  margin: 10px 5px 0px 5px;
+  text-align: justify;
+}
+.righthamburger,
+.lefthamburger {
+  display: none;
+}
+.opensubmenu {
+  display: block !important;
+}
+
+/* Desktop viewPort ---start--- */
+@media only screen and (min-width: 1000px) {
+  .LeftPartition ul:nth-child(2) {
+    position: absolute;
+    margin-left: 93px;
+    margin-top: -51px;
+  }
+  .LeftPartition li,
+  .RightPartition li {
+    display: flex;
+    z-index: 2;
+  }
+  .LeftPartition a,
+  .RightPartition a {
+    padding-bottom: 10px;
+  }
+  .RightPartition ul:nth-child(2) {
+    position: absolute;
+    margin-right: 93px;
+    margin-top: -51px;
+  }
+  .RightPartition li ul li {
+    width: 167px !important;
+  }
+  .RightPartition li ul li ul:nth-child(2) {
+    margin-right: 167px !important;
+  }
+  .RightPartition li:hover > ul {
+    display: block;
+  }
+  .LeftPartition li:hover > ul {
+    display: block;
+  }
+  .arrowLeft::after {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 2px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .arrowRight::after {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 2px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+}
+/* Desktop viewPort ---end--- */
+
+/* Tablet viewPort ---start---*/
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  /* Tablet ViewPort */
+  /* Your Code Here */
+  .LeftPartition,
+  .RightPartition {
+    display: none;
+  }
+  .RightPartition nav {
+    width: 100vw;
+  }
+
+  .LeftPartition nav {
+    width: 100vw;
+  }
+  .CenterCenterDiv {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .CenterCenterDiv p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .centerCenterDiv p img {
+    width: 100% !important;
+  }
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+  }
+
+  .arrowLeft::before {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 102px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .arrowRight::before {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 2px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+}
+/* Tablet viewPort ---end---*/
+
+/* Mobile ViewPort ---start---*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  /* Mobile ViewPort */
+
+  .LeftPartition,
+  .RightPartition {
+    display: none;
+  }
+  .LeftPartition nav {
+    width: 100vw;
+  }
+  .RightPartition nav {
+    width: 100vw;
+  }
+  .CenterCenterDiv {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .CenterCenterDiv p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .centerCenterDiv p img {
+    width: 100% !important;
+  }
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+  }
+  .arrowLeft::before {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 102px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .arrowRight::before {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 2px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+}
+/* Mobile ViewPort ---end---*/
+
+/* For generic top position same for the Tablet and Mobile version ---start---*/
+@media only screen and (max-width: 1000px) {
+  main,
+  footer,
+  header {
+    width: 100%;
+  }
+  footer {
+    z-index: 1 !important;
+  }
+  header {
+    height: 80px;
+    top: 0px;
+    z-index: 4 !important;
+  }
+  .RightPartition {
+    position: fixed;
+    right: 0px;
+    top: 50px;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 2;
+  }
+  .LeftPartition {
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    /* min-height: 100%; */
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction: ltr;
+    z-index: 2 !important;
+  }
+  .LeftPartition ul,
+  .RightPartition ul {
+    padding: 5px 0px !important;
+  }
+  .LeftPartition nav {
+    direction: ltr;
+    margin-left: 0px;
+    padding-left: 10px !important;
+  }
+  .RightPartition nav {
+    padding-right: 10px !important;
+  }
+  .LeftPartition li,
+  .RightPartition li {
+    background: transparent !important;
+    border: none !important;
+    margin: 5px 0px !important;
+  }
+  .LeftPartition > .LeftPartitionInnerContent > nav > ul > li:last-child {
+    margin: 0px 0px 25px 0px !important;
+  }
+  .RightPartition > .RightPartitionInnerContent > nav > ul > li:last-child {
+    margin: 0px 0px 25px 0px !important;
+  }
+  main {
+    top: 80px;
+  }
+  p:nth-of-type(2) {
+    margin-bottom: 80px;
+  }
+  .navtop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+  }
+
+  .righthamburger {
+    position: relative;
+    display: inline-block;
+    width: 1.25em;
+    height: 0.8em;
+    margin-right: 1vw;
+    border-top: 0.2em solid #fdf8f8;
+    border-bottom: 0.2em solid #fdf8f8;
+    cursor: pointer;
+  }
+  .lefthamburger {
+    position: relative;
+    display: inline-block;
+    width: 1.25em;
+    height: 0.8em;
+    margin-left: 1vw;
+    border-top: 0.2em solid #fdf8f8;
+    border-bottom: 0.2em solid #fdf8f8;
+    cursor: pointer;
+  }
+
+  .lefthamburger::before,
+  .righthamburger::before {
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid #fdf8f8;
+  }
+  footer {
+    position: relative;
+  }
+  footer ul {
+    list-style-type: none;
+    width: 150px;
+    margin: auto 0px 10px 10px !important;
+  }
+  footer nav {
+    width: 100%;
+    padding: 10px 0px 0px 30px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 0px;
+  }
+}
+/* For generic top position same for the Tablet and Mobile version ---end---*/
