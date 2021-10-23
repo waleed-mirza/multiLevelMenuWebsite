@@ -11,18 +11,37 @@
 
   function func() {
     const hr = document.createElement("span");
+    const hl = document.createElement("span");
     const header = document.querySelector("header");
     const headerimg = header.querySelector("a");
 
     header.classList.add("navtop");
     hr.classList.add("righthamburger");
+    hl.classList.add("lefthamburger");
 
+    header.insertBefore(hl, headerimg);
     insertAfter(hr, headerimg);
+
+    const lastcheck = document.querySelectorAll("header > div > nav > ul > li");
+    for (let j = 0; j < lastcheck.length; j++) {
+      atagscroll = lastcheck[j].querySelectorAll("a");
+      for (let i = 0; i < atagscroll.length; i++) {
+        atagscroll[i].addEventListener("click", (e) => {
+          setTimeout(() => {
+            let element = e.target;
+            element.scrollIntoView({
+              behavior: "smooth",
+              block: "center",
+              inline: "center",
+            });
+          }, 10);
+        });
+      }
+    }
 
     const lastcheck1 = document.querySelectorAll(
       "main > aside > div > nav > ul > li"
     );
-
     for (let j = 0; j < lastcheck1.length; j++) {
       const atagscroll1 = lastcheck1[j].querySelectorAll("a");
       for (let i = 0; i < atagscroll1.length; i++) {
@@ -38,13 +57,31 @@
         });
       }
     }
-
+    const leftclick = document.querySelector(".lefthamburger");
     const rightclick = document.querySelector(".righthamburger");
+    const leftmenu = document.querySelector("header > div");
     const rightmenu = document.querySelector("aside");
+
+    leftclick.addEventListener("click", (e) => {
+      leftmenu.classList.toggle("opensubmenu");
+      rightmenu.classList.remove("opensubmenu");
+    });
 
     rightclick.addEventListener("click", (e) => {
       rightmenu.classList.toggle("opensubmenu");
+      leftmenu.classList.remove("opensubmenu");
     });
+    const leftPartition = document.querySelector("header > div");
+    const leftList = leftPartition.querySelectorAll("li");
+    const leftul = leftPartition.querySelectorAll("ul");
+
+    for (let i = 0; i < leftList.length; i++) {
+      for (let j = 0; j < leftul.length; j++) {
+        if (leftList[i].contains(leftul[j])) {
+          leftList[i].classList.add("arrowLeft");
+        }
+      }
+    }
 
     const rightPartition = document.querySelector("aside");
     const rightList = rightPartition.querySelectorAll("li");
@@ -90,8 +127,6 @@
       if (window.innerWidth < 988) {
         resizeCheck = 0;
         const allitem = document.querySelectorAll("li");
-        const main = document.querySelector("main");
-        const atags = main.querySelectorAll("a");
 
         for (let i = 0; i < allitem.length; i++) {
           check1 = allitem[i].getElementsByTagName("ul");
@@ -100,8 +135,30 @@
             check1[k].style.display = "none";
           }
         }
+        const main = document.querySelector("main");
+        const atags = main.querySelectorAll("a");
         for (let i = 0; i < atags.length; i++) {
           atags[i].addEventListener("click", (e) => {
+            e.preventDefault();
+            link = e.target.getAttribute("href");
+            if (link === "#") {
+              const nextlist = e.target.nextElementSibling;
+              e.target.parentNode.classList.toggle("open");
+              if (nextlist.style.display === "none") {
+                nextlist.style.display = "block";
+              } else {
+                nextlist.style.display = "none";
+              }
+              e.stopPropagation();
+            } else {
+              window.location.href = link;
+            }
+          });
+        }
+        const main1 = document.querySelector("header div");
+        const atags1 = main1.querySelectorAll("a");
+        for (let i = 0; i < atags1.length; i++) {
+          atags1[i].addEventListener("click", (e) => {
             e.preventDefault();
             link = e.target.getAttribute("href");
             if (link === "#") {
